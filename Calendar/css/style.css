@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+nav ul {
+    background-color: #333;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box; /* Ensures padding does not affect overall width */
+}
+
+button {
+    padding: 5px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+button:hover {
+    background-color: #003974;
+}
+
+.back-to-home {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+}
+
+#calendar-container {
+    text-align: center;
+}
+
+#calendar h2 {
+    margin: 0.5em 0;
+}
+
+#calendar table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+#calendar th {
+    background-color: #f0f0f0;
+}
+
+#calendar td {
+    border: 1px solid #ddd;
+    height: 100px; /* 为事件留出空间 */
+    vertical-align: top; /* 保持数字和事件在单元格的顶部 */
+    position: relative; /* 允许事件绝对定位 */
+}
+
+#calendar .event-space {
+    position: absolute;
+    top: 20px; /* 事件从单元格顶部的20px位置开始 */
+    left: 0;
+    right: 0;
+}
+
+#calendar td.padding {
+    background-color: #f9f9f9;
+}
+
+#prev-month, #next-month {
+    margin: 10px;
+    padding: 5px 20px;
+}
+
+.user-id {
+    font-size: 0.8em; /* 设置字体大小为较小的尺寸 */
+    color: #666; /* 设置字体颜色为深灰色 */
+    /* 可以根据需要添加更多样式 */
+}

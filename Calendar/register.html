@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h2>Register</h2>
+    <form action="register.php" method="post">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit">Register</button>
+	<!-- include CSRF token -->
+	<input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>" />
+    </form>
+    <!-- link to index -->
+    <div class="back-to-home">
+        <a href="index.php" class="back-to-home">Back to Home</a>
+    </div>
+</body>
+</html>
+
